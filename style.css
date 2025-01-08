@@ -1,0 +1,510 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    width: 100%;
+    background: url("simple-flower.gif");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    font-family: sans-serif;
+}
+
+.navbar {
+    width: 86%;
+    display: flex;
+    margin: auto;
+    padding: 3px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo {
+    width: 160px;
+    height: 14vh;
+    cursor: pointer;
+    margin: top -1%;
+    margin-left: -8.1%;
+}
+
+ul {
+    margin-top: -4%;
+}
+
+ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px 16px;
+}
+
+ul li a {
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(248, 4, 118);
+    margin-top: -3%;
+}
+
+ul li a:hover {
+    color: rgb(4, 206, 145);
+}
+
+.info {
+    margin-left: 7%;
+    margin-top: 6%;
+}
+
+.info h1 {
+    font-size: 65px;
+    color: rgb(250, 6, 99);
+}
+
+.info h3 {
+    font-size: 19px;
+    letter-spacing: 1px;
+    line-height: 24px;
+    color: rgb(58, 12, 54);
+}
+
+.info a {
+    background: rgb(56, 7, 52);
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: azure;
+    display: inline-block;
+    padding: 10px 18px;
+    margin: 30px 0;
+    border-radius: 5px;
+}
+
+.info span {
+    color: rgb(250, 6, 99);
+}
+
+.info a:hover {
+    background: rgb(4, 206, 145);
+    color: white;
+}
+
+.image {
+    width: 20%;
+    height: 45%;
+    position: absolute;
+    right: 100px;
+    bottom: 0;
+}
+
+.image img {
+    position: absolute;
+    height: 140%;
+    left: 40%;
+    transform: translate(-65%);
+    bottom: 0;
+    transition: left 2s ease;
+}
+
+.image:hover .girl {
+    left: 65%;
+}
+
+.icons a {
+    text-decoration: none;
+    margin-right: 40px;
+    font-size: 40px;
+    color: rgb(34, 19, 241);
+    transition: .4s ease;
+}
+
+.icons {
+    margin-left: 7%;
+    margin-top: 0.5%;
+}
+
+.icons ion-icon:hover {
+    color: rgb(15, 199, 168);
+}
+
+.about {
+    background: fixed;
+    background-color: black;
+}
+
+.about .about-img {
+    width: 5px;
+    margin-top: 0px;
+    padding-top: 60px;
+    margin-left: 70px;
+    margin-right: 60%;
+    height: 50vh;
+}
+
+.about {
+    /*   background-color: black;*/
+    background-position: cover;
+    animation: mymove 5s infinite;
+    padding-bottom: 2.55%;
+}
+
+@keyframes mymove {
+    from {
+        background-color: red;
+    }
+    to {
+        background-color: blue;
+    }
+}
+
+.about .about-text {
+    margin: inherit;
+    font-family: sans-serif;
+    font-size: larger;
+    margin-right: 5%;
+    margin-left: 40%;
+    margin-top: -23%;
+    text-align: justify;
+    word-spacing: 1px;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+    color: white;
+}
+
+.about .about-text .previous-round {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: azure;
+    color: black;
+    border-radius: 50%;
+}
+
+.about .about-text .next-round {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: azure;
+    color: black;
+    border-radius: 50%;
+}
+
+.about .about-text h2 {
+    word-spacing: 6%;
+    padding: 2px;
+    color: white;
+}
+
+.about .about-in {
+    word-spacing: 6%;
+    padding: 2px;
+    color: white;
+}
+
+.about .about-text h4 {
+    word-spacing: 6%;
+    padding: 10px;
+    padding-left: 0px;
+    color: white;
+}
+
+.about .about-text .a {
+    margin-bottom: auto;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.skills {
+    margin: inherit;
+    font-family: sans-serif;
+    font-size: medium;
+    word-spacing: 1px;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+    color: white;
+    padding-bottom: 5%;
+}
+
+.skills .main-text .m1 {
+    margin: inherit;
+    font-family: sans-serif;
+    font-size: large;
+    text-align: center;
+    word-spacing: 1px;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+    color: white;
+}
+
+.skills .main-text .m1:hover {
+    background-color: transparent;
+    color: rgb(5, 252, 169);
+}
+
+.skills .skills-content .box {
+    max-width: 100%;
+    max-height: auto;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: justify;
+    padding-top: 1%;
+    padding-bottom: 1.75%;
+}
+
+.skills .main-text .previous-round {
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 16px;
+    background-color: azure;
+    color: black;
+    border-radius: 50%;
+    margin-left: 45%;
+    margin-top: 2%;
+}
+
+.skills .main-text .next-round {
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 16px;
+    background-color: azure;
+    color: black;
+    border-radius: 50%;
+}
+
+.skills .main-text .next-round:hover {
+    background-color: #05faa0;
+    color: white;
+}
+
+.skills .main-text .previous-round:hover {
+    background-color: #04ffa3;
+    color: white;
+}
+
+.skills {
+    /*   background-color: black;*/
+    animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+    from {
+        background-color: red;
+    }
+    to {
+        background-color: blue;
+    }
+}
+
+.portfolio {
+    /*   background-color: black;*/
+    animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+    from {
+        background-color: red;
+    }
+    to {
+        background-color: blue;
+    }
+}
+
+.portfolio .main-text .previous-round {
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 16px;
+    background-color: azure;
+    color: black;
+    border-radius: 50%;
+    margin-left: 40%;
+    margin-top: 2%;
+}
+
+.portfolio .main-text .next-round {
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 16px;
+    background-color: azure;
+    color: black;
+    border-radius: 50%;
+}
+
+.portfolio .main-text .next-round:hover {
+    background-color: #05faa0;
+    color: white;
+}
+
+.portfolio .main-text .previous-round:hover {
+    background-color: #04ffa3;
+    color: white;
+}
+
+.portfolio {
+    padding-bottom: 0%;
+}
+
+.portfolio-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.portfolio .main-text .m2 {
+    margin: inherit;
+    font-family: sans-serif;
+    font-size: larger;
+    text-align: center;
+    word-spacing: 2px;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+    color: white;
+}
+
+.portfolio .main-text .m2:hover {
+    background-color: transparent;
+    color: rgb(5, 252, 169);
+}
+
+.portfolio h4 {
+    font-family: sans-serif;
+    text-align: center;
+    font-size: large;
+    word-spacing: 2px;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+    color: white;
+    margin-left: -4%;
+    padding-top: 2%;
+    padding-bottom: 0.5%;
+}
+
+.portfolio-content .row .main-row {
+    color: rgb(246, 253, 251);
+    font-family: sans-serif;
+    text-align: center;
+    line-height: 30px;
+    font-size: large;
+    padding-bottom: 10px;
+}
+
+.portfolio .portfolio-content .row {
+    width: 350px;
+    border: 3px solid rgb(251, 255, 251);
+    padding: 1%;
+    margin: 10px;
+}
+
+.portfolio img {
+    color: white;
+    height: 250px;
+    width: 250px;
+    margin-left: 15%;
+}
+
+.portfolio h6 {
+    margin: inherit;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: medium;
+    word-spacing: 2px;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+    color: white;
+}
+
+.portfolio h3 {
+    margin: inherit;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: large;
+    word-spacing: 2px;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+    color: white;
+}
+
+.portfolio-content .row {
+    width: 390px;
+    background: rgb(153, 55, 112);
+    box-shadow: 10px 6px 4px rgb(247, 246, 246);
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.portfolio-content .row:hover {
+    cursor: pointer;
+    background-color: rgb(5, 252, 169);
+    color: azure;
+}
+
+.contact {
+    animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+    from {
+        background-color: red;
+    }
+    to {
+        background-color: blue;
+    }
+}
+
+.contact {
+    width: auto;
+    border: 5px solid rgb(17, 160, 17);
+    height: 69%;
+}
+
+.contact h2 {
+    width: fit-content;
+    border: 5px solid rgb(251, 255, 251);
+}
+
+.contact .contact-text {
+    width: auto;
+    border: 5px solid rgb(251, 255, 251);
+    padding-left: 70px;
+}
+
+.contact .contact-text {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: azure;
+    font-size: larger;
+    text-align: justify;
+}
+
+.contact-text .contact-list a {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: azure;
+    font-size: medium;
+    text-align: justify;
+}
+
+.contact-text .icons a {
+    color: azure;
+    font-size: small;
+    text-decoration: none;
+}
+
+.contact-text .icons .m3 a {
+    text-decoration: none;
+    color: azure;
+}
+
+.contact-text .icons .m3 a:hover {
+    text-decoration: none;
+    color: #04ffa3;
+}
+
+.contact-list .btn a {
+    text-decoration: white;
+    color: black;
+    font-size: medium;
+    padding-bottom: 10%;
+}
